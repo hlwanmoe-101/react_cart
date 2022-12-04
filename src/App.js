@@ -1,10 +1,14 @@
 import React from "react";
+import ProductProvider from "./Provider/ProductProvider";
+import Router from "./Route/Router";
+const App=()=>{
+    return(
 
-function App(){
-  return(
-    <div>
-      hello
-    </div>
-  )
+        <ProductProvider>
+           <Router/>
+        </ProductProvider>
+
+    )
 }
+
 export default App
